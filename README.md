@@ -105,6 +105,9 @@ Instructions for this section are based on the following resource:
     ```
     kubectl argo rollouts get rollout canary-demo --watch
     ```
+    NOTE: You can also watch the rollout using the Argo Rollouts dashboard. To start it, run 
+    `kubectl argo rollouts dashboard` in the namespace that contains your Rollouts. Then visit `localhost:3100` to view the user interface.
+
 1. In a new command window trigger an update by setting the image of a new color to run
     ```
     kubectl argo rollouts set image canary-demo "*=argoproj/rollouts-demo:yellow"
