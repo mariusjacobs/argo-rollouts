@@ -1,0 +1,5 @@
+metadata:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-target-node-labels: "kubernetes.io/os=linux,kubernetes.io/arch=amd64"
+spec:
+  type: LoadBalancer
