@@ -78,6 +78,11 @@ Instructions for this section are based on the following resource:
 
 ## Run the canary deployment example
 
+1. Create the application in ArgoCD
+    ```
+    kubectl apply -f https://raw.githubusercontent.com/mariusjacobs/argo-rollouts/main/application-dev.yaml
+    ```
+
 1. Clone the argocd rollouts-demo repo to your machine
     ```
     git clone https://github.com/argoproj/rollouts-demo.git
