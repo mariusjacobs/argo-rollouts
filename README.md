@@ -43,7 +43,7 @@ NOTE: All commands shown in this readme are assumed to be for a Linux shell.
 ## Install ArgoCD rollouts
 
 Instructions for this section are based on the following resource:
-https://argoproj.github.io/argo-rollouts/installation/#controller-installation
+* https://argoproj.github.io/argo-rollouts/installation/#controller-installation
 
 ### Controller Installation
 
