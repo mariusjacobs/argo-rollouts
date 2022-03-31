@@ -121,3 +121,22 @@ https://argoproj.github.io/argo-rollouts/installation/#controller-installation
     ```
     kubectl argo rollouts abort canary-demo
     ```
+
+## Cleanup
+
+1. Remove the canary demo
+    ```
+    kubectl kustomize examples/canary | kubectl delete -f -
+    ```
+1. Remove argo rollouts
+    ```
+    kubectl delete namespace argo-rollouts
+    ```
+1. Remove argocd
+    ```
+    kubectl delete namespace argocd
+    ```
+1. Delete the cluster
+    ```
+    eksctl delete cluster --name kube-demo --region us-west-1
+    ```
